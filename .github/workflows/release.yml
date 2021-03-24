@@ -43,6 +43,7 @@ jobs:
       -
         name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v2
+        timeout-minutes: 120
         with:
           version: latest
           args: release --rm-dist
